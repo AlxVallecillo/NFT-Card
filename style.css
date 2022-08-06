@@ -12,14 +12,40 @@
 
 body {
     background-color: var(--main-bg-color);
+}
+
+img.main-img {
+    width: 85%;
+    border-radius: 8px;
+    margin: auto;
+    display: block;
+}
+
+img.avatar {
+    width: 2rem;
+}
+
+p {
+    display: inline;
+}
+
+footer {
+    padding: 16px;
     text-align: center;
 }
 
+.time {
+    text-align: right;
+}
 
 .card {
     background-color: var(--card-bg-color);
     border-radius: 10px;
-    width: fit-content;
+    width: 18rem;
+    height: fit-content;
+    margin: 5rem auto;
+    padding-top: 1.5rem;
+    box-shadow: ;
 }
 
 .attribution {
