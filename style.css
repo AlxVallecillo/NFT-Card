@@ -1,3 +1,27 @@
+/* 𝑆𝑡𝑦𝑙𝑖𝑛𝑔 𝑓𝑜𝑟 𝑡ℎ𝑒 𝑡𝑎𝑔𝑠   */
+
+:root {
+    /* 𝑃𝑟𝑖𝑚𝑎𝑟𝑦 𝐶𝑜𝑙𝑜𝑟𝑠 */
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+
+    /* 𝐹𝑜𝑛𝑡 𝐶𝑜𝑙𝑜𝑟𝑠  */
+    --primary-font-color: hsl(215, 51%, 70%);
+    --m-font-fam: font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    width: fit-content;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
