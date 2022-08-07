@@ -5,9 +5,14 @@
     --main-bg-color: hsl(217, 54%, 11%);
     --card-bg-color: hsl(216, 50%, 16%);
 
+    /* 𝐹𝑜𝑛𝑡 𝑐𝑜𝑙𝑜𝑟𝑠  */
+
+    --sec-color: hsl(215, 51%, 70%);
+
     /* 𝐹𝑜𝑛𝑡 𝐶𝑜𝑙𝑜𝑟𝑠  */
     --primary-font-color: hsl(215, 51%, 70%);
-    --m-font-fam: font-family: 'Outfit', sans-serif;
+    --m-font-fam: 'Outfit', sans-serif;
+
 }
 
 body {
@@ -15,7 +20,7 @@ body {
 }
 
 img.main-img {
-    width: 85%;
+    width: 100%;
     border-radius: 8px;
     margin: auto;
     display: block;
@@ -25,8 +30,18 @@ img.avatar {
     width: 2rem;
 }
 
-p {
-    display: inline;
+h4, span {
+    color: hsl(0, 0%, 100%);
+}
+
+h6, .time-selector, .card-footer {
+    color: var(--sec-color);
+    font-weight: 300;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+    border-style: none none solid none;
 }
 
 footer {
@@ -34,22 +49,49 @@ footer {
     text-align: center;
 }
 
+/****** 𝐶𝑆𝑆 𝑓𝑜𝑟 𝑐𝑙𝑎𝑠𝑒𝑠  ****/
+
 .time {
     text-align: right;
 }
 
 .card {
     background-color: var(--card-bg-color);
+    font-family: var(--m-font-fam);
     border-radius: 10px;
-    width: 18rem;
+    width: 15rem;
     height: fit-content;
     margin: 5rem auto;
-    padding-top: 1.5rem;
+    padding: 1.5rem;
+}
+
+p, .price-selector, .time-selector {
+    display: inline;
+}
+
+.price-time-selector {
+    position: relative;
+    width: inherit;
+
+}
+
+.price-selector {
+    color: hsl(178, 100%, 50%);
+}
+
+.time-selector {
+    position: absolute;
+    right: 2px;
+}
+
+.card-footer {
+    margin-top: 1.3rem;
 }
 
 .attribution {
-    font-size: 11px;
     text-align: center;
+    font-family: var(--m-font-fam);
+    font-size: 1rem;
 }
 
 .attribution a {
