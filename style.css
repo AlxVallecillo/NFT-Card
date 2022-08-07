@@ -12,7 +12,6 @@
     /* 𝐹𝑜𝑛𝑡 𝐶𝑜𝑙𝑜𝑟𝑠  */
     --primary-font-color: hsl(215, 51%, 70%);
     --m-font-fam: 'Outfit', sans-serif;
-
 }
 
 body {
@@ -42,6 +41,7 @@ h6, .time-selector, .card-footer {
 hr {
     color: hsl(215, 32%, 27%);
     border-style: none none solid none;
+    padding: 8px 0;
 }
 
 footer {
