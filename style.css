@@ -6,7 +6,6 @@
     --card-bg-color: hsl(216, 50%, 16%);
 
     /* 𝐹𝑜𝑛𝑡 𝑐𝑜𝑙𝑜𝑟𝑠  */
-
     --sec-color: hsl(215, 51%, 70%);
 
     /* 𝐹𝑜𝑛𝑡 𝐶𝑜𝑙𝑜𝑟𝑠  */
@@ -26,8 +25,11 @@ img.main-img {
 }
 
 img.avatar {
-    width: 2rem;
-    border: 1px white;
+    width: 1.7rem;
+    border: 2px solid white;
+    border-radius: 100%;
+    vertical-align: -.54rem;
+    margin-right: .52rem;
 }
 
 svg {
@@ -47,6 +49,7 @@ h6, .time-selector, .card-footer {
 h6 {
     font-size: small;
     margin: .3rem auto;
+    font-size: 1rem;
 }
 
 hr {
@@ -80,7 +83,7 @@ a:hover {
     background-color: var(--card-bg-color);
     font-family: var(--m-font-fam);
     border-radius: 10px;
-    width: 15rem;
+    width: 16rem;
     height: fit-content;
     margin: 5rem auto;
     padding: 1.5rem;
@@ -95,6 +98,7 @@ p, .price-selector, .time-selector {
     position: relative;
     width: inherit;
     margin: .9rem 0 0 0;
+    font-size: smaller;
 }
 
 .price-selector {
@@ -107,7 +111,8 @@ p, .price-selector, .time-selector {
 }
 
 .card-footer {
-    margin-top: 1.3rem;
+    margin-top: .8rem;
+    font-size: smaller;
 }
 
 .attribution {
