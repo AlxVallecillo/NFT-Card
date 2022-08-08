@@ -24,6 +24,10 @@ img.main-img {
     display: block;
 }
 
+/* img.main-img:active {
+    ba;
+} */
+
 img.avatar {
     width: 1.7rem;
     border: 2px solid white;
@@ -37,16 +41,25 @@ svg {
     vertical-align: -.18rem;
 }
 
-h3, span {
+h1, span {
     color: hsl(0, 0%, 100%);
 }
 
-h6, .time-selector, .card-footer {
+h1 {
+    font-size: 1.2rem;
+}
+
+h1:hover, span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p, .time-selector, .card-footer {
     color: var(--sec-color);
     font-weight: 300;
 }
 
-h6 {
+p.paragh {
     font-size: small;
     margin: .3rem auto;
     font-size: 1rem;
@@ -58,11 +71,6 @@ hr {
     padding: 8px 0;
 }
 
-footer {
-    padding: 16px;
-    text-align: center;
-}
-
 a {
     color: var(--sec-color);
     text-decoration: none;
@@ -71,6 +79,11 @@ a {
 a:hover {
     color: hsl(234, 36%, 36%);
     transition: .6s;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
 }
 
 /****** 𝐶𝑆𝑆 𝑓𝑜𝑟 𝑐𝑙𝑎𝑠𝑒𝑠  ****/
@@ -101,6 +114,38 @@ a:hover {
 
 p, .price-selector, .time-selector {
     display: inline;
+}
+
+.overlay-parent {
+    position: relative;
+}
+
+.overlay {
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+}
+
+a.icon {
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    top: 45%;
+    left: 40%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.overlay-parent:hover .overlay {
+    opacity: .5;
+    cursor: pointer;
 }
 
 .price-time-selector {
