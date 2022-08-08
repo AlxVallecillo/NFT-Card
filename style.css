@@ -27,6 +27,12 @@ img.main-img {
 
 img.avatar {
     width: 2rem;
+    border: 1px white;
+}
+
+svg {
+    margin: .22rem .18rem 0 0;
+    vertical-align: -.18rem;
 }
 
 h3, span {
@@ -36,6 +42,11 @@ h3, span {
 h6, .time-selector, .card-footer {
     color: var(--sec-color);
     font-weight: 300;
+}
+
+h6 {
+    font-size: small;
+    margin: .3rem auto;
 }
 
 hr {
@@ -83,7 +94,7 @@ p, .price-selector, .time-selector {
 .price-time-selector {
     position: relative;
     width: inherit;
-
+    margin: .9rem 0 0 0;
 }
 
 .price-selector {
