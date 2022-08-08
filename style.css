@@ -79,6 +79,7 @@ a:hover {
     text-align: right;
 }
 
+/* 𝑀𝑎𝑖𝑛 𝑐𝑎𝑟𝑑 𝑏𝑜𝑑𝑦 𝑐𝑠𝑠 𝑐𝑜𝑑𝑒  */
 .card {
     background-color: var(--card-bg-color);
     font-family: var(--m-font-fam);
@@ -88,6 +89,14 @@ a:hover {
     margin: 5rem auto;
     padding: 1.5rem;
     box-shadow: .5rem 1.3rem 2rem 1.3rem hsl(217, 55%, 10%), -.5rem 1.3rem 2rem 1.3rem hsla(217, 55%, 10%), 1rem 2.6rem 4rem hsla(217, 55%, 10%, .3), 1rem 2.6rem 4rem hsla(217, 55%, 10%, .3);
+}
+
+/* 𝑀𝑎𝑖𝑛 𝑐𝑎𝑟𝑑 𝐵𝑜𝑑𝑦 𝐶𝑆𝑆 𝑤ℎ𝑒𝑛 𝑣𝑖𝑒𝑤 𝑝𝑜𝑟𝑡 ℎ𝑎𝑠 𝑚𝑎𝑥-𝑤𝑖𝑑𝑡ℎ 𝑎𝑑𝑗𝑢𝑠𝑡 𝑐𝑎𝑟𝑑 𝑤𝑖𝑑𝑡ℎ  */
+@media screen and (max-width: 376px) {
+    .card {
+        width: 75vw;
+        margin: 3rem auto;
+    }
 }
 
 p, .price-selector, .time-selector {
