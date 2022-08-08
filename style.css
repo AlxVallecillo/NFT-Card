@@ -29,7 +29,7 @@ img.avatar {
     width: 2rem;
 }
 
-h4, span {
+h3, span {
     color: hsl(0, 0%, 100%);
 }
 
@@ -49,6 +49,16 @@ footer {
     text-align: center;
 }
 
+a {
+    color: var(--sec-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(234, 36%, 36%);
+    transition: .6s;
+}
+
 /****** 𝐶𝑆𝑆 𝑓𝑜𝑟 𝑐𝑙𝑎𝑠𝑒𝑠  ****/
 
 .time {
@@ -63,6 +73,7 @@ footer {
     height: fit-content;
     margin: 5rem auto;
     padding: 1.5rem;
+    box-shadow: .5rem 1.3rem 2rem 1.3rem hsl(217, 55%, 10%), -.5rem 1.3rem 2rem 1.3rem hsla(217, 55%, 10%), 1rem 2.6rem 4rem hsla(217, 55%, 10%, .3), 1rem 2.6rem 4rem hsla(217, 55%, 10%, .3);
 }
 
 p, .price-selector, .time-selector {
@@ -91,9 +102,6 @@ p, .price-selector, .time-selector {
 .attribution {
     text-align: center;
     font-family: var(--m-font-fam);
-    font-size: 1rem;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--sec-color);
+    font-size: .8rem;
 }
